@@ -1,0 +1,43 @@
+#wrapper {
+  background-color: black;
+}
+
+header {
+  color: white;
+  background-color: black;
+  padding: 5vh;
+}
+
+footer {
+  color: white;
+  background-color: gray;
+  text-align: center;
+  padding: 5vh;
+}
+
+main {
+  background-color: white;
+  margin: 0;
+}
+main .nasaTitle {
+  padding: 2vh 2vw;
+}
+
+.nasaContent {
+  height: 60%;
+  overflow: hidden;
+}
+.nasaContent img {
+  width: 100%;
+}
+
+.nasaDesc {
+  padding: 2vh 2vw 2vh 2vw;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    margin: 0 15vw 0 15vw;
+  }
+}

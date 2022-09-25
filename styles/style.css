@@ -1,0 +1,11 @@
+#wrapper {
+  background-color: #f4f4f4;
+}
+
+header {
+  visibility: hidden;
+}
+
+a {
+  color: green;
+}

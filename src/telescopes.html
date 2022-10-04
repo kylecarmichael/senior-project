@@ -3,6 +3,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NASA Photo of the Day</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+    />
 
     <!-- Bootstrap -->
     <link
@@ -19,64 +23,100 @@
     <script src="./dest/script.js"></script>
   </head>
   <body>
-    <div id="wrapper">
-      <header>
-        <!-- img will go here -->
-      </header>
+    <header>
+      <!-- <img src="imgs/spaceBackground.jpg" alt="Space and starry backdrop" /> -->
+      <h1>NASA Photo of the Day</h1>
+    </header>
 
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">NASA Photo of the Day</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link active">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  href="telescopes.html"
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  >Telescopes</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a href="#" class="dropdown-item">Hubble</a></li>
-                  <li><a href="#" class="dropdown-item">JWST</a></li>
-                  <li><a href="#" class="dropdown-item">New Horizons</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  href="amatuerAstronomy.html"
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  >Amatuer Astronomy</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a href="#" class="dropdown-item">Naked Eye</a></li>
-                  <li><a href="#" class="dropdown-item">Sky Maps</a></li>
-                  <li><a href="#" class="dropdown-item">Telescope Types</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">🚀</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href=""
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Telescopes</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="telescopes.html" class="dropdown-item"
+                    >Notable Telescopes</a
+                  >
+                </li>
+                <li><a href="hubble.html" class="dropdown-item">Hubble</a></li>
+                <li><a href="jwst.html" class="dropdown-item">JWST</a></li>
+                <li>
+                  <a href="newHorizons.html" class="dropdown-item"
+                    >New Horizons</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="amatuerAstronomy.html"
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Amatuer Astronomy</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="gettingStarted.html" class="dropdown-item"
+                    >Getting Started</a
+                  >
+                </li>
+                <li>
+                  <a href="nakedEye.html" class="dropdown-item">Naked Eye</a>
+                </li>
+                <li>
+                  <a href="skyMaps.html" class="dropdown-item">Sky Maps</a>
+                </li>
+                <li>
+                  <a href="telescopeTypes.html" class="dropdown-item"
+                    >Telescope Types</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-
-      <!-- end wrapper -->
+      </div>
+    </nav>
+    <div id="wrapper">
+      <main>
+        <h2>Notable Telescopes</h2>
+        <img src="./imgs/earthFromSpace.jpg" alt="Earth as seen from space" />
+        <h2>Overview</h2>
+        <p>overview of how they work</p>
+        <h2>History</h2>
+        <p>brief history of telescopes</p>
+        <a role="button" class="btn btn-dark" href="telescopeTypes.html">
+          Use your own Telescope</a
+        >
+      </main>
     </div>
+
+    <footer>
+      <small>Kyle Carmichael &copy; 2022</small>
+    </footer>
 
     <!-- Bootstrap -->
     <script

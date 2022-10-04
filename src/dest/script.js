@@ -7,12 +7,7 @@ $.ajax({
     success: function (data) {
         $('.nasaTitle').text(data.title);
         $('.nasaDesc').text(data.explanation);
-        $('.nasaContent').html('<img src="' + data.hdurl + '" alt="' + data.title + '"/>');
+        $('.nasaContent').html('<img src="' + data.hdurl + '" alt="The ' + data.media_type + ' of ' + data.title + '"/>');
+        $('.nasaDate').text(data.date);
     }
 });
-/*
-Improvement plans:
-
-Alt text
-The alt text will get the media type and then say the title. Ex "A video of Jupiter", "An image of Cool Nebula"
-*/

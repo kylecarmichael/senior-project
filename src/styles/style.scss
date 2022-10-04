@@ -1,44 +1,78 @@
+$rich-black: rgb(47, 44, 51);
+$cool-white: #e6e8eb;
+
 #wrapper {
-    background-color: black;
+    background-image: url(../imgs/spaceBackground.jpg);
+    background-position: center;
 }
 
 header {
-    color:white;
-    background-color: black;
+    color:$cool-white;
+    background-color: $rich-black;
     padding: 5vh
 }
 
+h2 {
+    text-align: center;
+}
+
 footer {
-    color: white;
-    background-color: gray;
+    color: $cool-white;
+    background-color: $rich-black;
     text-align: center;
     padding: 5vh;
 }
 
 main {
-    background-color: white;
+    background-color: $cool-white;
     margin: 0;
+    padding: 1rem 0;
     .nasaTitle {
         padding: 2vh 2vw;
     }
 }
 
 .nasaContent {
-    height: 60%;
     overflow: hidden;
     img{
         width: 100%;
     }
 }
 
+.nasaDate {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 1vh 0;
+}
 
 .nasaDesc {
-    padding: 2vh 2vw 2vh 2vw;
+    padding: 0 2vw 2vh 2vw;
     margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.card {
+    margin: 0.5rem 0;
+
 }
 
 @media only screen and (min-width: 768px) {
     main {
         margin: 0 15vw 0 15vw;
+    }
+
+    .card-wrapper {
+        margin: 0 2rem 0 2rem;
+    }
+    
+    .notable-card {
+        margin: 0;
+    }
+
+    .card {
+        padding-left: 0;
     }
 }

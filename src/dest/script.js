@@ -8,7 +8,7 @@ $.ajax({
         $('.nasaTitle').text(data.title);
         $('.nasaDesc').text(data.explanation);
         if (data.media_type === 'video') {
-            $('.nasaContent').html('<video src="' + data.url + '" alt="The ' + data.media_type + ' of ' + data.title + '"/>');
+            $('.nasaContent').html('<video> <source src="' + data.url + '"> </video> ';
         } else {
             $('.nasaContent').html('<img src="' + data.hdurl + '" alt="The ' + data.media_type + ' of ' + data.title + '"/>');
         };

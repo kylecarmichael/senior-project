@@ -14,6 +14,12 @@ header {
 
 h2 {
     text-align: center;
+    padding: 2vh 2vw;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 2vh;
 }
 
 footer {
@@ -57,6 +63,29 @@ img {
 .card {
     margin: 0.5rem 0;
 
+}
+
+.card-img-top {
+    padding-bottom: 2vh;
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 30vh;
+}
+
+.landing-p {
+    padding: 1vh 2vw 0 2vw;
+}
+
+.my-btns {
+    margin: 2vh 0;
+    padding: 1.5rem 7vw;
+}
+
+.my-btns-group {
+    padding: 1rem 7vw;
 }
 
 @media only screen and (min-width: 768px) {
